@@ -8,6 +8,7 @@ public class Paciente {
     //Atributos
     private long cedula;
     private String nombre;
+    private List<Enfermedad> enfermedades;
 
     public Paciente(long cedula, String nombre){
         this.cedula = cedula;

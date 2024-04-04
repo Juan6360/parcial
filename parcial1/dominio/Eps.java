@@ -8,17 +8,15 @@ public class Eps {
     public static final byte CAPACIDAD = 100;
     private String nombre;
     private List<Paciente> pacientes;
-    private List<Enfermedad> enfermedades;
 
-    public Enfermedad(){this.enfermedades = new ArrayList<>();}
     public Eps(){this.pacientes = new ArrayList<>();}
 
     //Metodos
     public boolean afiliarPaciente(long cedula, String nombre){
-        Paciente nuevoPaciente = new Paciente(cedula, nombre);
 
         if(this.pacientes.size() < CAPACIDAD){
             if(this.buscarPaciente(cedula) == null){
+                Paciente nuevoPaciente = new Paciente(cedula, nombre);
                 this.pacientes.add(nuevoPaciente);
                 return true;
             }else{
@@ -53,8 +51,7 @@ public class Eps {
     }
 
     public List<Paciente> buscarPacientesPorEnfermedad(String enfermedad){
-        Enfermedad pacienteEnfermo = new Enfermedad(enfermedad);
-        pacienteEnfermo.getNombre()
+        return null;
     }
 
     public List<Paciente> obtenerPacientesSinEnfermedades(){
@@ -62,6 +59,6 @@ public class Eps {
     }
 
     public void ordenarPacientesPorNombre(){
-        List<Paciente> listaOrdenda = this.pacientes.sort();
+
     }
 }
