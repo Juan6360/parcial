@@ -7,5 +7,7 @@ public class Enfermedad {
     //Atributos
     private String nombre;
 
-    public String getNombre(){return this.nombre;}
+    public Enfermedad(String nombre){
+        this.nombre = nombre;
+    }
 }

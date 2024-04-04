@@ -8,9 +8,11 @@ public class AppEps {
         Eps nuevaEPs = new Eps();
 
         nuevaEPs.afiliarPaciente(123, "Juan");
-
         nuevaEPs.afiliarPaciente(323, "Carlos");
+
         nuevaEPs.buscarPaciente(123);
         nuevaEPs.sacarPaciente(124);
+
+
     }
 }

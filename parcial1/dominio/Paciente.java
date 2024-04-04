@@ -1,6 +1,5 @@
 package com.alejandro.parcial.dominio;
 
-import javax.lang.model.element.PackageElement;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -14,6 +13,8 @@ public class Paciente {
         this.cedula = cedula;
         this.nombre = nombre;
     }
+
+    public String getNombre(){return this.nombre;}
 
     public long getCedula() {return this.cedula;}
 }
