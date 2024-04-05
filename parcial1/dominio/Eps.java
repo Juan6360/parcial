@@ -1,6 +1,7 @@
 package com.alejandro.parcial.dominio;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 
 public class Eps {
@@ -9,7 +10,10 @@ public class Eps {
     private String nombre;
     private List<Paciente> pacientes;
 
-    public Eps(){this.pacientes = new ArrayList<>();}
+    public Eps(String nombre){
+        this.pacientes = new ArrayList<>();
+        this.nombre = nombre;
+    }
 
     //Metodos
     public boolean afiliarPaciente(long cedula, String nombre){
@@ -59,6 +63,6 @@ public class Eps {
     }
 
     public void ordenarPacientesPorNombre(){
-
+        this.pacientes.sort(Comparator.comparing(Paciente::getNombre));
     }
 }

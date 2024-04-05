@@ -16,5 +16,7 @@ public class Paciente {
 
     public String getNombre(){return this.nombre;}
 
+    public List<Enfermedad> getEnfermedades(){return this.enfermedades;}
+
     public long getCedula() {return this.cedula;}
 }
